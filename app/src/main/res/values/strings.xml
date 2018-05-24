@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Trabalho01.THAISE-2018-1</string>
+
+    <string name="app_name">Trabalho01.THAISE-2018-1 </string>
+    <string name="tam">Tamanho em metros </string>
+    <string name="btCalcular">Calcular Tinta </string>
+
 </resources>
