@@ -2,6 +2,7 @@ package com.example.samsung.trabalho01thaise_2018_1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -33,17 +34,35 @@ public class MainActivity extends AppCompatActivity {
 
     private void calcular(){
 
-        int tamanho = Float.parseFloat(etTamanho.getText().toString());
+        float tamanho_float = Float.parseFloat(etTamanho.getText().toString());
 
 
-        mostraMsg("calcular a dividao por latas de tinta"jhbujhbhjbh));
+        mostraMsg(tamanho_float);
     }
 
-    private void mostraMsg(int tam){
+    private void mostraMsg(float tam){
+        //capacidade de pintura
+        float lt18, lt3e6, result, valor;
+        int result_int;
+        lt18 = 108;
+        lt3e6 = (float) 21.6;
         String msg="";
 
-        if(tam > 75){
-            msg += " - Melhor usar o galao de 18 litros, devido ao valor ser superior";
+
+        //Lata de 18 Litros
+        result = tam / lt18;
+        result_int = (int) result;
+        if(result > result_int){
+            result_int = result_int + 1;
+        }
+        valor = result_int * 80;
+        msg += ("O cliente terá que comprar " + result_int);
+        msg += ("latas de 18 litros. Para isso gastará " + valor);
+        msg +=("reais");
+
+
+        if(tam > 108){
+
 
         }
         if(tam >=6 && tam <= 75){
