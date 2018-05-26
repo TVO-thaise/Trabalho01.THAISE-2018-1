@@ -61,15 +61,6 @@ public class MainActivity extends AppCompatActivity {
         msg +=("reais");
 
 
-        if(tam > 108){
-
-
-        }
-        if(tam >=6 && tam <= 75){
-            msg += " ,A sua melhor opção é usar galões de 3,6 litros";
-        }
-
-
-        tvMensagem.setText( (String.valueOf(tam).concat( msg)));
+        tvMensagem.setText(msg);
     }
 }
